@@ -1,4 +1,4 @@
-from SCons.Errors import StopError
+<from SCons.Errors import StopError
 
 
 class BlackmagicResolver:
