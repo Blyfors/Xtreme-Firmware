@@ -43,7 +43,11 @@ void furi_hal_init() {
     furi_hal_mpu_init();
     furi_hal_clock_init();
     furi_hal_random_init();
+<<<<<<< HEAD
     furi_hal_console_init(FuriHalUartIdUSART1, CONSOLE_BAUDRATE);
+=======
+    furi_hal_serial_control_init();
+>>>>>>> upstream/dev
     furi_hal_rtc_init();
     furi_hal_interrupt_init();
     furi_hal_flash_init();

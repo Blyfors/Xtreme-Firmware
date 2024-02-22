@@ -6,16 +6,6 @@
 
 #define TAG "FuriHal"
 
-bool normal_boot = false;
-
-void furi_hal_set_is_normal_boot(bool value) {
-    normal_boot = value;
-}
-
-bool furi_hal_is_normal_boot() {
-    return normal_boot;
-}
-
 void furi_hal_init_early() {
     furi_hal_cortex_init_early();
     furi_hal_clock_init_early();
@@ -43,7 +33,11 @@ void furi_hal_init() {
     furi_hal_mpu_init();
     furi_hal_clock_init();
     furi_hal_random_init();
+<<<<<<< HEAD
     furi_hal_console_init(FuriHalUartIdUSART1, CONSOLE_BAUDRATE);
+=======
+    furi_hal_serial_control_init();
+>>>>>>> upstream/dev
     furi_hal_rtc_init();
     furi_hal_interrupt_init();
     furi_hal_flash_init();

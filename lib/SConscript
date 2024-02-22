@@ -39,11 +39,17 @@ libs = env.BuildModules(
         "lfrfid",
         "flipper_application",
         "music_worker",
+        "mjs",
         "nanopb",
         "update_util",
         "xtreme",
         "heatshrink",
+        "ble_profile",
+        "bit_lib",
+        "datetime",
     ],
 )
+
+env.Append(SDK_HEADERS=[File("#/lib/callback-connector/callback-connector.h")])
 
 Return("libs")
